@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&I</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <div class="row mt-4 d-none" id="game">
+                <div class="col col-12 text-center">
+                    <div class="form-group row container">
+                        <label class="display-4 col col-12">My Guess</label>
+                        <div class="col col-3 mx-auto" id="loading">
+                            <div class="spinner-border"></div>
+                        </div>
+                        <input id="guess" type="number" disabled class="form-control text-center col col-3 mx-auto d-none">
+                    </div>
+                </div>
+                <div class="col col-6 text-center">
+                    <div class="from-group">
+                        <label class="display-4">Dead</label>
+                        <input type="number" min="0" max="4" id="dead" class="form-control">
+                        <div class="invalid-feedback">Min:0 Max:4</div>
+                        <div class="valid-feedback">Game</div>
+                    </div>
+                </div>
+                <div class="col col-6 text-center">
+                    <div class="from-group">
+                        <label class="display-4">Injured</label>
+                        <input type="number" min="0" max="4" id="injured" class="form-control">
+                        <div class="invalid-feedback">Min:0 Max:4</div>
+                        <div class="valid-feedback">Over</div>
+                    </div>
+                </div>
+                <button class="col col-12 mt-4 btn btn-success" id="submit">Submit</button>
+            </div>
+            <div class="row">
+                <button class="mx-auto mt-4 btn btn-primary" id="start">Start</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scenarios.js"></script>
+</body>
+</html>
