@@ -3,6 +3,7 @@ const dead = document.getElementById("dead");
 const injured = document.getElementById("injured");
 const submit = document.getElementById("submit");
 const start = document.getElementById("start");
+const instruction = document.getElementById("instruction");
 const game = document.getElementById("game");
 const loading = document.getElementById("loading");
 
@@ -153,6 +154,7 @@ function check(){
 start.addEventListener("click",()=>{
     game.classList.remove("d-none");
     start.classList.add("d-none");
+    instruction.classList.add("d-none");
 
     thinking(1);
 
